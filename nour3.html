@@ -1,0 +1,53 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Main characteristics of the database</h1>
+    <table border="2px" width="1500px">
+<tr>
+    <th>Self-describing nature of a database system. </th>
+    <th>Insulation between programs and data, and data abstraction.</th>
+    <th>Support of multiple views of the data. </th>
+    <th>Sharing of data and multiuser transaction processing. </th>
+    </tr>
+<tr>
+    
+    <td>
+        <ul>
+            <li>A database system contains both
+            <ul>
+                <li>A database itself </li>
+                <li>A complete definition or description of the database structure and constraints</li>
+                </ul>
+            </li>
+            <li>This definition is stored in the DBMS catalog.</li>
+            <li>The information stored in the catalog is called meta -data.</li>
+            <li>In traditional file processing, data definition is typically part of the application programs themselves</li>
+            <li>Hence, these programs are constrained to work with only one specific database, whose structure is declared in the application programs</li>
+        </ul>
+</td>
+    
+    <td>
+        <ul>
+            <li>A database typically has many users, each of whom may require a different perspective or view of the database.</li>
+            <li>one user of the database may be interested only in accessing and printing the transcript of each student.</li>
+            <li>A second user, who is interested only in checking that students have taken all the prerequisites of each course for which they register.</li>
+        </ul>
+    </td>
+    <td>
+    <ul>
+        <li>A multiuser DBMS allow multiple users to access the database at the same time</li>
+        <li>The DBMS must include concurrency control software to ensure that several users trying to update the same data do so in a controlled manner so that the result of the updates is correct. </li>
+        <li>several reservation agents try to assign a seat on an airline flight, the DBMS should ensure that each seat can be accessed by only one agent at a time for assignment to a passenger. </li>
+        </ul>
+    </td>
+    <td> 
+    <ul>
+        <li>For example, when several reservation agents try to assign a seat on an airline flight, the DBMS should ensure that each seat can be accessed by only one agent at a time for assignment to a passenger. These types of applications are generally called online transaction processing (OLTP) applications.</li>
+        <li>A fundamental role of multiuser DBMS software is to ensure that concurrent transactions operate correctly and efficiently.</li>
+        </ul>
+    </td>
+        </tr>
+</table>
+    </body>
+</html>
